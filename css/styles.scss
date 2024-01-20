@@ -1,0 +1,209 @@
+@import '_reset.scss';
+
+
+$Cyan: hsl(179, 62%, 43%);
+$BrightYellow: hsl(71, 73%, 54%);
+$LightGray: hsl(204, 43%, 93%);
+$GrayishBlue: hsl(218, 22%, 67%);
+$CyanLight: hsl(178, 48%, 52%);
+$White: hsl(0, 0%, 100%);
+
+body {
+    background-color: $LightGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Karla', sans-serif;
+    
+    main {
+        width: 635px;
+        border-radius: 8px;
+        background: $White;
+        box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+        background: $Cyan;
+        overflow: hidden;
+        margin: 20px;
+
+        .community {
+            background-color:$White;
+            padding: 40px;
+
+            @media (max-width: 650px) {
+                padding: 28px 24px 32px 24px;
+            }
+
+            h1 {
+                color: $Cyan;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.3px;
+                margin-bottom: 24px;
+
+                @media (max-width: 650px) {
+                    font-size: 20px;
+                }
+            }
+
+            h2 {
+                color: $BrightYellow;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.225px;
+                margin-bottom: 11px;
+                
+                @media (max-width: 650px) {
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: -0.187px;
+                }
+            }
+
+            p {
+                color: $GrayishBlue;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: -0.2px;
+
+                @media (max-width: 650px) {
+                    font-size: 14px;
+                    line-height: 26px;
+                    letter-spacing: -0.175px;
+                }
+            }
+        }
+
+        .subscription-why-us {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+
+            //media mobile query
+            @media (max-width: 650px) {
+                flex-direction: column;
+            }
+
+            h3 {
+                color: $White;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.225px;
+                margin-bottom: 18px;
+            }
+
+            .subscription {
+                width: 50%;
+                padding: 40px 40px 39px 40px;
+                @media (max-width: 650px) {
+                    width: 100%;
+                    padding: 28px 24px 32px 24px;
+                }
+
+                button {
+                    width: 237px;
+                    height: 48px;
+                    flex-shrink: 0;
+                    border: none;
+                    border-radius: 5px;
+                    background: #C0DF33;
+                    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+
+                    color: #FFF;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: -0.2px;
+
+                    @media (max-width: 650px) {
+                        width: 100%;
+                    }
+                }
+
+
+                .pricing {
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 11px;
+                    margin-bottom: 4px;
+
+                    .amount {
+                        color:$White;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: -0.4px;
+                    }
+
+                    .duration {
+                        color: $White;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px;
+                        letter-spacing: -0.2px;
+                        opacity: 0.5;
+                    }
+                }
+
+                .subscription-notes {
+                    color:$White;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    letter-spacing: -0.2px;
+                    margin-bottom: 26px;
+                }
+            }
+
+            .why-us {
+                width: 50%;
+                background-color: $CyanLight;
+                padding: 40px;
+
+                @media (max-width: 650px) {
+                    width: 100%;
+                }
+
+                h3 {
+                    color: $White;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: -0.225px;
+                    margin-bottom: 17px;
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        color: $White;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px;
+                        /* 142.857% */
+                        letter-spacing: -0.175px;
+                        opacity: 0.75;
+                    }
+                }
+            }
+        }
+    }
+}
